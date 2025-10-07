@@ -1,0 +1,21 @@
+/* Fade-in animation for sections */
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+section.visible {
+    opacity: 1;
+}/* Custom typography and colors */
+body {
+    font-family: 'Arial', sans-serif; /* Mix with a web-safe font */
+}
+h1, h2 {
+    font-family: 'Georgia', serif; /* Unique serif for headings */
+}/* Hover effects for creativity */
+a:hover {
+    transition: color 0.3s;
+}/* Particle canvas styling */
+#particles {
+    pointer-events: none;
+}                        
+
