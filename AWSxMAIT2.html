@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS x MAIT Collaboration</title>
+    <!-- Tailwind CSS CDN for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="bg-blue-900 text-white p-4 fixed w-full top-0 z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold">AWS x MAIT</div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+                <li><a href="#about-aws" class="hover:text-blue-300">About AWS</a></li>
+                <li><a href="#about-mait" class="hover:text-blue-300">About MAIT</a></li>
+                <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('assets/banner.jpg');">
+        <div class="text-center text-white bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold mb-4">Welcome to AWS x MAIT</h1>
+            <p class="text-lg mb-6">Empowering the next generation of cloud innovators at Maharaja Agrasen Institute of Technology.</p>
+            <a href="#about-aws" class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700">Learn More</a>
+        </div>
+        <canvas id="particles" class="absolute top-0 left-0 w-full h-full"></canvas> <!-- For JS particles -->
+    </section>
+
+    <!-- About AWS Section -->
+    <section id="about-aws" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="https://i.postimg.cc/85Wmwvmm/IMG-1850.jpg " alt="AWS Logo" class="w-48 mb-6 md:mb-0 md:mr-8">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">About AWS</h2>
+                    <p class="text-gray-700 mb-4">Amazon Web Services (AWS) is the world's most comprehensive cloud platform, offering over 200 fully featured services from data centers globally. It powers innovation for startups, enterprises, and governments.</p>
+                    <p class="text-gray-700">Reference: Official AWS site - aws.amazon.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About MAIT Section -->
+    <section id="about-mait" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <img src="https://i.postimg.cc/JhsfrTRk/IMG-1852.jpg " alt="MAIT Logo" class="w-48 mb-6 md:mb-0 md:ml-8">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">About MAIT</h2>
+                    <p class="text-gray-700 mb-4">Maharaja Agrasen Institute of Technology (MAIT) is a premier engineering institute in Delhi, fostering excellence in technology education since 1999. Affiliated with GGSIPU, it emphasizes innovation and industry collaboration.</p>
+                    <p class="text-gray-700">Reference: Official MAIT site - mait.ac.in</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p class="mb-6">Join the AWS Academy at MAIT for workshops, certifications, and more.</p>
+            <form class="max-w-md mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full p-2 mb-4 rounded">
+                <input type="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded">
+                <textarea placeholder="Message" class="w-full p-2 mb-4 rounded"></textarea>
+                <button type="button" class="bg-white text-blue-900 px-6 py-2 rounded hover:bg-gray-200">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2025 AWS x MAIT. Created by Aayush. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
